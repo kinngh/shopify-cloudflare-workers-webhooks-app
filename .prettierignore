@@ -1,0 +1,7 @@
+.env
+bun.lockb
+.DS_Store
+.wrangler/
+node_modules/
+wrangler.toml
+package-lock.json

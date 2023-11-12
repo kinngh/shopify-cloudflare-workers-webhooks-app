@@ -1,0 +1,39 @@
+{
+  "name": "shopify-cloudflare-workers-webhooks-app",
+  "version": "0.0.1",
+  "description": "Boilerplate to offload your Shopify app's webhooks to Cloudflare Workers",
+  "author": {
+    "name": "Harshdeep Singh Hura",
+    "url": "https://harshdeephura.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kinngh/shopify-cloudflare-workers-webhooks-app.git"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "publish": "wrangler deploy",
+    "-----> Wrangler <-----": "",
+    "wrangler": "wrangler",
+    "w:login": "wrangler login",
+    "w:init": "wrangler init",
+    "-----> utils <-----": "",
+    "pretty": "prettier --write ./",
+    "ngrok": "ngrok http 8787",
+    "update": "ncu -u",
+    "-----> Shopify <-----": "",
+    "g:install": "npm i -g @shopify/app@latest @shopify/cli@latest",
+    "shopify": "shopify"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^16.14.6",
+    "prettier": "^3.0.3",
+    "wrangler": "3.14.0"
+  },
+  "dependencies": {
+    "@shopify/shopify-api": "^8.0.2",
+    "cryptr": "^6.3.0",
+    "itty-router": "^4.0.23",
+    "ngrok": "^5.0.0-beta.2"
+  }
+}
