@@ -1,0 +1,24 @@
+// Keep your database schema up to date with your actual db
+// Ideally, you wouldn't want to make changes here and only run
+//  `npx prisma db pull` or `npm run db:pull` to pull updated schema
+//  to your worker
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model stores {
+  shop     String   @id
+  isActive Boolean? @default(false)
+}
+
+model session {
+  id      String  @id
+  content String? @db.Text
+  shop    String?
+}

@@ -28,7 +28,6 @@ const verifyWebhook = async (request) => {
     apiVersion,
     webhookId,
   };
-  
 };
 
 export default verifyWebhook;

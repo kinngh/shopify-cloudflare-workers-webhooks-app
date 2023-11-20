@@ -1,0 +1,10 @@
+# Rename this to `ngrok.yml`
+authtoken: 
+version: 2
+tunnels:
+  shopify-app:
+    addr:  3000
+    proto: http
+  cloudflare-workers:
+    addr: 8787
+    proto: http

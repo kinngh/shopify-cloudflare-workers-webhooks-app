@@ -1,14 +1,6 @@
-# Shopify Cloudflare Workers Webhooks Manager - WIP
+# Shopify Cloudflare Workers Webhooks Manager
 
 A Cloudflare Workers instance meant to handle large amounts of webhooks from your Shopify app.
-
-## To Do
-
-- Documentation
-- Migrating from `shopify.webhooks.process` to `shopify.webhooks.validate` so your app can redirect webhooks to a CF Workers instance
-- Session handlers
-- Client Providers
-- Snippets
 
 ## Supporting repositories
 
@@ -18,8 +10,9 @@ A Cloudflare Workers instance meant to handle large amounts of webhooks from you
 
 ## Tech Stack
 
-- Itty-Router
 - Wrangler
+- Itty-Router
+- Prisma ORM - Edge
 
 ## Why I made this
 

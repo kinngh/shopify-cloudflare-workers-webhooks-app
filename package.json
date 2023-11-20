@@ -19,18 +19,23 @@
     "w:init": "wrangler init",
     "-----> utils <-----": "",
     "pretty": "prettier --write ./",
-    "ngrok": "ngrok http 8787",
+    "ngrok": "ngrok start --all --config ./ngrok.yml",
     "update": "ncu -u",
     "-----> Shopify <-----": "",
     "g:install": "npm i -g @shopify/app@latest @shopify/cli@latest",
-    "shopify": "shopify"
+    "shopify": "shopify",
+    "-----> Prisma <-----": "",
+    "db:pull": "npx prisma db pull",
+    "db:push": "npx prisma db push"
   },
   "devDependencies": {
-    "npm-check-updates": "^16.14.6",
-    "prettier": "^3.0.3",
-    "wrangler": "3.14.0"
+    "npm-check-updates": "^16.14.11",
+    "prettier": "^3.1.0",
+    "prisma": "^5.6.0",
+    "wrangler": "3.16.0"
   },
   "dependencies": {
+    "@prisma/client": "5.6.0",
     "@shopify/shopify-api": "^8.0.2",
     "cryptr": "^6.3.0",
     "itty-router": "^4.0.23",

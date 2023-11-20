@@ -1,6 +1,7 @@
 .env
 bun.lockb
 .DS_Store
+ngrok.yml
 .wrangler/
 node_modules/
 wrangler.toml
