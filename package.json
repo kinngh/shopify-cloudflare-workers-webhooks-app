@@ -26,17 +26,18 @@
     "shopify": "shopify",
     "-----> Prisma <-----": "",
     "db:pull": "npx prisma db pull",
-    "db:push": "npx prisma db push"
+    "db:push": "npx prisma db push",
+    "db:generate": "npx prisma generate --no-engine"
   },
   "devDependencies": {
     "npm-check-updates": "^16.14.15",
     "prettier": "^3.2.5",
-    "prisma": "^5.9.1",
-    "wrangler": "3.28.2"
+    "prisma": "^5.10.2",
+    "wrangler": "3.29.0"
   },
   "dependencies": {
-    "@prisma/client": "5.9.1",
-    "@shopify/shopify-api": "^9.2.0",
+    "@prisma/client": "5.10.2",
+    "@shopify/shopify-api": "^9.3.2",
     "cryptr": "^6.3.0",
     "itty-router": "^4.0.27",
     "ngrok": "^5.0.0-beta.2"
